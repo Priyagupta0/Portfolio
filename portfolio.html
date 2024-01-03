@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-outline: 0;
+	font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html {
+            scroll-behavior: smooth;
+        }
+
+html, body 
+	{
+	font-size: 14px;
+	font-weight: 400;
+	background: #000000;
+	color: #fff;
+}
+.container {
+	width: 1100px;
+	margin: 0px auto;
+	display: table;
+}
+.width-33 {
+	width: 33%;
+	float: left;
+}
+.width-66 {
+	width: 66%;
+	float: left;
+}
+
+.main-panel {
+	width: 100%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	height: 100vh;
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.span-col {
+	color: #ffbf35;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 20px;
+	color: white;
+}
+
+.width-50 {
+	float: left;
+	width: 50%;
+}
+.banner-section {
+	width: 100%;
+	float: left;
+	margin-top: 25vh;
+}
+.banner-section h1 {
+	font-size: 48px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+.banner-section h2 {
+	font-size: 20px;
+	line-height: 25px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+.banner-section a {
+	float: left;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 50%;
+	text-align: center;
+	border: 2px solid #ffbf35;
+	color: #ffbf35;
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+
+.main-panel img {
+	margin-top: 10%;
+	width: 100%;
+	margin-left: 10%;
+}
+
+.main-section {
+	width: 100%;
+	float: left;
+	padding: 110px 0px 110px 0px;
+}
+.width-100 {
+	width: 100%;
+	float: left;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.heading-text {
+	width: 100%;
+	float: left;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #ffbf35;
+}
+
+.about-me {
+	width: 100%;
+	padding: 20px;
+}
+.about-me p {
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 27px;
+}
+table {
+	width: 100%;
+}
+table td {
+	font-size: 16px;
+	text-align: left;
+	padding: 5px 0px;
+}
+
+.skill {
+	margin-top: 30px;
+	font-size: 17px;
+}
+
+.skill span {
+	float: right;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+
+.skill div span {
+	background: #ffbf35;
+	height: 5px;
+	float: left;
+}
+
+div[role="progressbar"] {
+	color: #ffbf35;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	width: 100px;
+	;
+	height: 100px;
+	;
+	border-radius: 50%;
+
+	place-items: center;
+	display: grid;
+
+	--pgPercentage: var(--value);
+	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+		conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+
+}
+
+.bg-lightgrey {
+	background-color: #1a1a1a;
+}
+.project-list {
+	width: 100%;
+	float: left;
+	padding: 30px 10px;
+	background: #262626;
+	margin-bottom: 20px;
+}
+.project-content {
+	width: 100%;
+	float: left;
+	margin-left: 10px;
+}
+.project-content h2 {
+
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.project-content p {
+	font-size: 15px;
+}
+.edu-exp {
+	padding: 10px 0px;
+	width: 48%;
+	margin: 1%;
+	float: left;
+	padding-left: 10px;
+}
+.experience-list {
+	width: 100%;
+	float: left;
+	padding: 30px 10px;
+	background: #262626;
+	margin-bottom: 20px;
+}
+.experience-content {
+	width: 100%;
+	float: left;
+	margin-left: 10px;
+}
+.experience-content h2 {
+
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.experience-content h3 {
+	color: #ffbf35;
+	font-weight: 500;
+	margin-bottom: 2px;
+	font-size: 17px;
+}
+.experience-content p {
+	font-size: 15px;
+}
+
+.contact form {
+	width: 66%;
+	margin: 0px auto;
+}
+.contact input,
+textarea {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #a1a1a1;
+}
+.contact textarea {
+	height: 80px;
+}
+.contact button {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	background: #ffbf35;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+}
+.contact h3 {
+	font-size: 26px;
+	text-align: center;
+	margin-top: 60px;
+	color: #ffbf35;
+}
+.contact h4 {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+}
+.contact p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.footer {
+	background-color: #202020;
+	padding: 30px 0px 40px 0px;
+	width: 100%;
+	float: left;
+}
+.footer-sect {
+	color: #b3b3b3;
+}
+.footer-sect a {
+	color: #b3b3b3;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+}
+.social-icon a i {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #cdcdcd;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 50%;
+}
+</style>
+<body>
+  
+	<div class="main-panel">
+        <div class="container">
+            <div class="width-33 logo">Port <span class="span-col">Folio</span></a></div>
+            <div class="width-66">
+                <nav>
+                    <a href="#home"><span class="span-col">Home</span></a>
+                    <a href="#about-me">About me</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact Me</a>
+                </nav>
+            </div>
+        </div>
+<div class="container ">
+  <div class="width-50">
+    <div class="banner-section">
+      <span class="span-col">Welcome To My Portfolio</span>
+      <h1>Priya <span class="span-col">Gupta</span>
+      </h1>
+      <h2>- I'm a passionate web developer from India.</h2>
+      <a href="#">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="width-50">
+  </div>
+</div>
+</div>
+<div class="main-section bg-lightgrey">
+  <div class="container">
+    <div class="width-50">
+    </div>
+    <div class="width-100">
+      <div class="about-me">
+        <h2 class="heading-text">About Me</h2>
+        <p>
+          Hey, Welcome to you in my profile! 
+<br><br>
+I am Priya Gupta,I am a Computer Science and Engineering undergraduate from Dr. A.P.J.Abdul Kalam Technical University and a technical enthusiast.
+<br>
+I have a deep interest in cloud computing and a great knowledge of web development.I have completed basics of  HTML | CSS | C programming language and have a knowledge of Git and GitHub, Now I am working on python. 
+<br>
+Currently I am working as frontend web developer at Bharat Intern and explore my knowledge.
+<br>
+l wish to use my technical acumen to contribute to a team that works for development and creates a positive impact on the society.
+<br><br>
+Thanks for visiting my profile and I'll be glad to connect with you!
+</p>
+  </div>
+</div>
+
+<div class="main-section">
+  <div class="container">
+    <h2 class="heading-text">My Skills</h2>
+    <div class="width-50">
+      <div class="skill">
+        <b>HTML</b>
+        <span>95%</span>
+        <div>
+          <span style="width:95%"></span>
+        </div>
+      </div>
+      <div class="skill">
+        <b>CSS</b>
+        <span>91%</span>
+        <div>
+          <span style="width:91%"></span>
+        </div>
+      </div>
+      <div class="skill">
+        <b>JavaScript</b>
+        <span>85%</span>
+        <div>
+          <span style="width:85%"></span>
+        </div>
+      </div>
+      <div class="skill">
+        <b>C</b>
+        <span>85%</span>
+        <div>
+          <span style="width:85%"></span>
+        </div>
+      </div>
+      <div class="skill">
+        <b>Python</b>
+        <span>79%</span>
+        <div>
+          <span style="width:79%"></span>
+        </div>
+      </div>
+    </div>
+    <div class="width-50">
+      <div class="width-50">
+        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">Python</div>
+      </div>
+      <div class="width-50">
+        <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">C</div>
+      </div>
+      <div class="width-50">
+        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">CSS</div>
+      </div>
+      <div class="width-50">
+        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:85">JavaScript</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="projects">
+      <h2 class="heading-text">Projects</h2>
+      <div class="project-list">
+        <div class="project-content">
+          <h2>Facebook Login Page</h2>
+          <p>A login credential is a set of unique identifiers–such as a username and password–that enables a user to verify identity in order to log in to an online account.
+		</p>
+        </div>
+	</div>
+	<div class="project-list">
+        <div class="project-content">
+          <h2>Netflix Clone</h2>
+          <p>By replicating the functionality and features of the original Netflix platform, the clone project provides users with a wide range of options to choose from, including movies, TV shows, documentaries, and other video content.</p>
+        </div>
+      </div>
+      <div class="project-list">
+        <div class="project-content">
+          <h2>Payment Page</h2>
+          <p>What is the description of a payment page?
+			How to Create a Professional Payment Page - Akurateco
+			The payment page is where the client enters his payment info to complete the order. It is the key page on the website that suggests the suitable method of payment, asks for the details of the purchase (shipping, billing, etc.), and completes the payment.</p>
+        </div>
+      </div>
+        <div class="project-list">
+          <div class="project-content">
+            <h2>Weather Website</h2>
+            <p>Weather forecasts serve the purpose of providing information about expected weather conditions, such as temperature, precipitation, wind, and humidity, for a specific location and time period.</p>
+          </div>
+        </div>
+       </div>
+      </div>
+<div class="main-section bg-lightgrey">
+  <div class="container">
+    <div class="edu-exp">
+      <h2 class="heading-text">Education</h2>
+      <div class="experience-list">
+        <div class="experience-content">
+          <h2>Dr.A.P.J.Abdul Kalam Technical University </h2>
+          <h3>2022-2026</h3>
+          <p>Bachelor in Computer Science and Engineering</p>
+        </div>
+      </div>
+      <div class="experience-list">
+        <div class="experience-content">
+          <h2>New Horizon School</h2>
+          <h3>2021-2022</h3>
+          <p>Higher Secondary School with Physics,Chemistry,Maths</p>
+        </div>
+      </div>
+      <div class="experience-list">
+        <div class="experience-content">
+          <h2>New Horizon School</h2>
+          <h3>2019-2020</h3>
+          <p>High School</p>
+        </div>
+      </div>
+    </div>
+    <div class="edu-exp">
+      <h2 class="heading-text">Experience</h2>
+      <div class="experience-list">
+        <div class="experience-content">
+          <h2>Bharat Intern</h2>
+          <h3>2023-current</h3>
+          <p>Font End Developer</p>
+        </div>
+      </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>Code Soft</h2>
+            <h3>2023-current</h3>
+            <p>Python Programmer</p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+<div class="main-section contact bg-lightgrey">
+  <div class="container">
+    <h2 class="heading-text">Contact Me</h2>
+    <h3 class="heading-text">Get In Touch</h3>
+    <div class="width-100">
+      <form>
+        <input type="text" placeholder="Full Name...">
+        <input type="text" placeholder="Full Email Id...">
+        <input type="text" placeholder="Full Mobile No...">
+        <textarea type="text" placeholder="Enter Address..."></textarea>
+        <button type="submit">Submit</button>
+	</div>
+    <div class="width-39">
+      <h3>
+        <i class="fa fa-phone"></i>
+      </h3>
+      <h4>Phone</h4>
+      <p>+91 8791641606</p>
+    </div>
+    <div class="width-39">
+      <h3>
+        <i class="fa fa-envelope-o"></i>
+      </h3>
+      <h4>Email</h4>
+      <p>pg7108970@gmail.com</p>
+    </div>
+  </div>
+</div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+	<div class="container">
+	  <div class="footer-sect social-icon width-50">
+		<a href="#">
+		  <i class="fa fa-facebook"></i>
+		</a>
+		<a href="#">
+		  <i class="fa fa-twitter"></i>
+		</a>
+		<a href="#">
+		  <i class="fa fa-linkedin"></i>
+		</a>
+		<a href="#">
+		  <i class="fa fa-instagram"></i>
+		</a>
+	  </div>
+	  <div class="footer-sect mt-20 width-50">CopyRight © 2024 PriyaGupta. All Rights Reserved</div>
+	</div>
+  </div>
+<body>
+</head>
+</html>
