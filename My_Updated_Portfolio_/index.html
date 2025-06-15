@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">Priya's Portfolio</a>
+      </div>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" role="navigation">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="first" id="home">
+      <div class="main">
+        <p>Hello, It's Me</p>
+        <div style="font-size: 2.5em; color: orange">
+          Priya <span style="color: rgb(191, 156, 224)">Gupta</span>
+        </div>
+        <p>and I am Passionate</p>
+        <div class="typing">
+          <span id="element"></span>
+        </div>
+        <div class="social-links hero-social">
+          <a href="https://www.linkedin.com/in/priya-gupta-325b67290" target="_blank" class="social-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Priyagupta0" target="_blank" class="social-icon">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/_priyagupta0209" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://x.com/PriyaGupta0209" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="http://t.me/P2ias" target="_blank" class="social-icon">
+            <i class="fa fa-telegram"></i>
+          </a>
+        </div>
+        <div class="btn1">
+          <a href="assets/Priya-Gupta.PDF" download=""
+            >Download Resume &ensp;<i
+              class="fa fa-download"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/image.jpg" alt="My Image" />
+      </div>
+    </section>
+    <div class="hr"></div>
+    <br />
+    <section id="about" class="second">
+      <div
+        style="
+          font-size: 2em;
+          color: orange;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        About <span style="color: rgb(191, 156, 224)">Me</span> !
+      </div>
+      <br />
+      <p class="about">
+        <br />
+        "Every challenge is an opportunity to innovate!" <br /><br />
+        I am passionate about how technology can simplify complexities, enhance
+        efficiency, and create real impact. With a strong foundation in Computer
+        Science, I thrive on collaboration, learning from diverse perspectives,
+        and turning ideas into meaningful solutions.
+        <br />
+        My experience spans across AI-driven application development , Frontend development (HTML, CSS,
+        JavaScript, React.js) and React Native Development. I've also worked on projects
+        involving AI, Data visualization, and Basic algorithm implementation.
+        <br /><br />
+        Let's connect and build something remarkable! <br />
+        <span class="btn2">
+          <a
+            href="https://www.linkedin.com/in/priya-gupta-325b67290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >Connect</a
+          >
+        </span>
+      </p>
+    </section>
+    <br />
+    <div class="hr"></div>
+    <section class="third" id="Skills">
+      <div
+        style="
+          font-size: 2em;
+          color: orange;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        My <span style="color: rgb(191, 156, 224)">Skills</span>
+      </div>
+      <br />
+      <h2>Technical Skills</h2>
+      <div class="skills-section">
+        <div class="skill-box">
+          <div class="skills">
+            <i class="fa fa-html5" aria-hidden="true">&ensp;HTML</i>
+            <span>100%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 100%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="fa fa-css3" aria-hidden="true">&ensp;CSS</i>
+            <span>100%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 100%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-javascript-plain">&ensp;JavaScript</i>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 80%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-bootstrap-plain">&ensp;Bootstrap</i>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 80%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-react-plain">&ensp;React</i>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 80%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-c-plain">&ensp;C</i>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 80%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-csharp-plain">&ensp;C#</i>
+            <span>50%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 50%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-java-plain">&ensp;Java</i></i>
+            <span>50%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 50%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-python-plain">&ensp;Python</i>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 80%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skills">
+            <i class="devicon-react-plain">&ensp;React-Native</i>
+            <span>50%</span>
+          </div>
+          <div class="bar"><div class="fill" style="--width: 50%"></div></div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 50px">Soft Skills</h2>
+      <div class="soft-skills">
+        <div class="soft-skill">
+          <svg class="progress-ring">
+            <circle class="background-ring" cx="100" cy="100" r="80"></circle>
+            <circle class="collaboration" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="title">Collaboration</div>
+        </div>
+
+        <div class="soft-skill">
+          <svg class="progress-ring">
+            <circle class="background-ring" cx="100" cy="100" r="80"></circle>
+            <circle class="communication" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="title">Communication</div>
+        </div>
+
+        <div class="soft-skill">
+          <svg class="progress-ring">
+            <circle class="background-ring" cx="100" cy="100" r="80"></circle>
+            <circle class="problem" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="title">Problem Solving</div>
+        </div>
+
+        <div class="soft-skill">
+          <svg class="progress-ring">
+            <circle class="background-ring" cx="100" cy="100" r="80"></circle>
+            <circle class="teamwork" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="title">Teamwork</div>
+        </div>
+      </div>
+    </section>
+    <div class="hr"></div>
+    <br />
+
+    <section class="experience" id="experience">
+      <div
+        style="
+          font-size: 2em;
+          color: orange;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        My <span style="color: rgb(191, 156, 224)">Experience</span>
+      </div><br>
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <div class="card" style="width: 25rem; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <div class="card-body">
+            <h3 class="card-title" style="color: orange; text-align: center;">Data Science Intern</h3>
+            <h4 class="card-subtitle mb-2" style="color: rgb(191, 156, 224); text-align: center;">Infotact Solutions</h4>
+            <p class="card-text text-muted" style="text-align: center;">Feb 2025 - May 2025</p>
+            <ul class="experience-list" style="color: black; padding-left: 20px;">
+              <li>Worked on real-world data science projects, applying machine learning algorithms to solve business problems.</li>
+              <li>Developed and optimized predictive models for data analysis and business intelligence.</li>
+              <li>Gained hands-on experience with data preprocessing, visualization, and model deployment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="width: 25rem; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <div class="card-body">
+            <h3 class="card-title" style="color: orange; text-align: center;">Student Ambassador</h3>
+            <h4 class="card-subtitle mb-2" style="color: rgb(191, 156, 224); text-align: center;">C# Corner</h4>
+            <p class="card-text text-muted" style="text-align: center;">Jun 2024 - May 2025</p>
+            <ul class="experience-list" style="color: black; padding-left: 20px;">
+              <li>Represented C# Corner at my educational institution and in the developer community.</li>
+              <li>Organized and conducted technical workshops and coding events.</li>
+              <li>Created technical content including tutorials and articles on C# and .NET technologies.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hr"></div>
+    <br />
+
+    <section class="fourth" id="projects">
+      <div
+        style="
+          font-size: 2em;
+          color: orange;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        My <span style="color: rgb(191, 156, 224)">Projects</span>
+      </div><br>
+      <div class="projects-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 0 20px;">
+        
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">AI-Powered Task Management System</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+              <li>Developed an intelligent task management system with user authentication login/signup.</li>
+              <li>Added deadline reminders and smart scheduling based on task priority and AI suggestions.</li>
+              <li>Tech Stack: Python, Streamlit</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://ai-poweredtms.streamlit.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/AI_Task_Management_System" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Personalized HealthCare and Medicine Recommendation System</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+              <li>Built a comprehensive healthcare platform with secure user authentication.</li>
+              <li>Developed ML models for disease prediction with 89% accuracy using patient symptoms.</li>
+              <li>Created personalized treatment plans including medicine recommendations, diet charts, and exercise and workouts routines.</li>
+              <li>Tech Stack: Python, Flask, Scikit-learn, SQLAlchemy, HTML, CSS</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://my-personalized-healthcare-medicine.onrender.com/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/Personalized_HealthCare_Medicine_Recommendation_System" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Interactive Stopwatch & Timer</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+              <li>Developed a feature-rich stopwatch with millisecond precision timing</li>
+              <li>Created a clean, responsive UI with Stop , Start , Reset options.</li>
+              <li>Tech Stack: HTML5, CSS3, JavaScript</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://my-unique-stopwatch.netlify.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/StopWatch" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Tic Tac Toe Game</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+              <li>Designed and developed a responsive Tic Tac Toe game with a clean UI</li>
+              <li>Implemented game logic to handle player turns and win conditions</li>
+              <li>Added a reset button to restart the game easily</li>
+              <li>Tech Stack: HTML5, CSS3, JavaScript</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://tic-tac-toe-game-bypg.netlify.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/Tic-Tac-Toe" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Resume Skill Extractor</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+              <li>Developed a tool that automatically extracts and categorizes skills from resumes in PDF/DOCX format.</li>
+              <li>Built a user-friendly dashboard for drag and drop Textfile/PDF/DOCX upload.</li>
+              <li>Tech Stack: Python, React, FastAPI</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://resume-skill-extractor.netlify.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/Resume-Skill-Extractor" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">AI-CHATBOT</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+                <li>Developed an AI-powered chatbot capable of answering user queries in real time and also can listen the answer , user can set the dark/lightmode and can send queries by speaking.</li>
+                <li>Designed a user-friendly web interface for seamless chat experience.</li>
+                <li>Tech Stack: Python, FastAPI, HTML, CSS, OpenAI API</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://priya-gupta-chatbot.netlify.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/AI_CHATBOT" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+                <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Mother's Day Website</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+                <li>Created a beautiful and responsive website to celebrate Mother's Day.</li>
+                <li>Implemented a circular motion effect for images (memories).</li>
+                <li>Tech Stack: HTML, CSS</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://mothersday-special.netlify.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/Mother-s-day" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+                <div class="project-card" style="width: 45%; min-width: 300px; padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 127, 255, 0.5); box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;">
+          <h3 style="color: orange; text-align: center; margin-bottom: 15px;">Personal Fitness Tracker</h3>
+          <div class="project-content">
+            <ul style="color: white; padding-left: 20px; margin-bottom: 20px;">
+                <li>Implemented user authentication dashboard.</li>
+                <li>Designed and implemented a personal fitness tracker to monitor daily workouts, calories burn, and progress over time.</li>
+                <li>Tech Stack: Python , Streamlit , Pandas</li>
+            </ul>
+            <div class="project-links" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+              <a href="https://myfirstpft.streamlit.app/" class="btn" style="background-color: #4CAF50; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Live Demo</a>
+              <a href="https://github.com/Priyagupta0/Personal_Fitness_Tracker" class="btn" style="background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br>
+    <div class="hr"></div>
+    <br />
+
+    <section class="fifth" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-title">Contact <span>Me</span></h2>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Feel free to reach out to me for any questions or opportunities. I'll get back to you as soon as possible!</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>pg7108970@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 8791641606</p>
+                </div>
+              </div>
+              
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/priya-gupta-325b67290" target="_blank" class="social-icon">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Priyagupta0" target="_blank" class="social-icon">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_priyagupta0209" target="_blank" class="social-icon">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://x.com/PriyaGupta0209" target="_blank" class="social-icon">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://t.me/P2ias" target="_blank" class="social-icon">
+                  <i class="fa fa-telegram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><br>
+    <div class="hr"></div>
+    <br />
+    <footer>
+      <h4>&copy; Copyright . All rights are reserved.</h4>
+    </footer><br>
+    <div class="hr"></div><br>
+  </body>
+</html>
